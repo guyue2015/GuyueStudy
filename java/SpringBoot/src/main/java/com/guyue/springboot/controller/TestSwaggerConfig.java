@@ -4,7 +4,6 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
-import io.swagger.annotations.ApiParam;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 
@@ -40,10 +39,7 @@ public class TestSwaggerConfig {
 		@ApiResponse(code=200,message="",response=TestBean.class,responseContainer="List"),
 		@ApiResponse(code=400,message="错误信息")
 	})
-	@ApiImplicitParams({
-		@ApiImplicitParam(name="reqParam",required=false,paramType="body",dataType="ReqParam")
-	})
-	@ApiParam
+	
 	@RequestMapping(path = "/test/swagger/list", method = RequestMethod.GET)
 	public ApiResult getWsaggerList(@RequestBody ReqParam reqParam) {
 		ApiResult result = new ApiResult();
@@ -61,6 +57,10 @@ public class TestSwaggerConfig {
 		result.setData(testList);
 		return result;
 	}
+	@ApiImplicitParams({
+		@ApiImplicitParam(name="reqPropertyStr",value="测试属性字段",required=false,paramType="body",dataType="String"),
+		@ApiImplicitParam(name="reqPropertyInt",value="测试属性字段",required=false,paramType="body",dataType="int")
+	})
 	@RequestMapping(path = "/test/swagger/save", method = RequestMethod.POST)
 	public TestBean testSave(@RequestBody TestBean testBean) {
 		logger.debug("保存测试内容");
