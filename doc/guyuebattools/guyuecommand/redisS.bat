@@ -1,0 +1,1 @@
+start /MIN E:\guyue\project\redis\redis-server.exe

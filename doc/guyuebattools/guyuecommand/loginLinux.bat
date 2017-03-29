@@ -1,0 +1,1 @@
+start E:\guyue\project\XshellXftpPortable\XshellPortable.exe
