@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 @RestController
+@RequestMapping("/postman")
 @Api(tags = "test post Man",description="供测试人员测试postman使用")
 public class TestpostManController {
 	private Logger logger = LoggerFactory.getLogger(TestpostManController.class);

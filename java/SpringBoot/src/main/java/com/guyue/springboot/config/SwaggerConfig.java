@@ -50,7 +50,18 @@ public class SwaggerConfig extends WebMvcConfigurerAdapter
         watch.start();
         Docket swaggerSpringMvcPlugin = new Docket(DocumentationType.SWAGGER_2)
                 .groupName("test")
-                .apiInfo(apiInfo()).select().apis(RequestHandlerSelectors.any())
+                .apiInfo(apiInfo()).select().apis(RequestHandlerSelectors.any()).paths(regex("/test/*"))
+                .build();
+        watch.stop();
+        return swaggerSpringMvcPlugin;
+    }
+    @Bean
+    public Docket swaggerSpringfoxDocket4Admin() {//最重要的就是这里，定义了/test/.*开头的rest接口都分在了test分组里，可以通过/v2/api-docs?group=test得到定义的json
+        StopWatch watch = new StopWatch();
+        watch.start();
+        Docket swaggerSpringMvcPlugin = new Docket(DocumentationType.SWAGGER_2)
+                .groupName("postman")
+                .apiInfo(apiInfo()).select().apis(RequestHandlerSelectors.any()).paths(regex("/postman/*"))
                 .build();
         watch.stop();
         return swaggerSpringMvcPlugin;
