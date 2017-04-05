@@ -10,8 +10,8 @@ import static com.mongodb.client.model.Filters.*;
 
 public class TestMongoDB {
 	public static void main(String[] args) {
-		MongoClient mongoClient = new MongoClient(new MongoClientURI("mongodb://192.168.15.75:27017"));
-		MongoDatabase database = mongoClient.getDatabase("test");
+//		MongoClient mongoClient = new MongoClient(new MongoClientURI("mongodb://192.168.15.75:27017"));
+//		MongoDatabase database = mongoClient.getDatabase("test");
 //		database.getCollection("user").drop();
 //		database.createCollection("user");
 //		List<Document> userDocList = new ArrayList<Document>();
@@ -26,12 +26,12 @@ public class TestMongoDB {
 //			userDocList.add(Document.parse(new Gson().toJson(student)));
 //		}
 //		database.getCollection("user").insertMany(userDocList);
-		FindIterable<Document> findList = database.getCollection("user").find(ne("_id", 5));
-		for(Document doc:findList){
-			System.out.println(doc.size());
-			System.out.println(doc.toJson());
-//			System.out.println(doc.get(doc., Student.class));
-		}
+//		FindIterable<Document> findList = database.getCollection("user").find(ne("_id", 5));
+//		for(Document doc:findList){
+//			System.out.println(doc.size());
+//			System.out.println(doc.toJson());
+////			System.out.println(doc.get(doc., Student.class));
+//		}
 	}
 }
 class Student{

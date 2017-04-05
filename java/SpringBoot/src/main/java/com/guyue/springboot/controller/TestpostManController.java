@@ -58,6 +58,8 @@ public class TestpostManController {
 		Random rc = new Random();
 		result.put("id", rc.nextInt(100));
 		result.put("code", 200);
+		result.put("name", params.get("name"));
+		result.put("age", params.get("age"));
 		result.put("test", "测试数据");
 		return result;
 	}
