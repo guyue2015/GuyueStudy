@@ -1,0 +1,7 @@
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <form name="form" ng-submit="events.getData()" novalidate form-locator>
+开始：<input type="number" id="start" ng-model="searchInputs.start">
+结束：<input type="number" id="end" ng-model="searchInputs.end">
+      <input type="submit" value="查询">
+    </form>
+    <div id="main" style="width: 600px;height:400px;"></div>

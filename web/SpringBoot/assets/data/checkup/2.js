@@ -1,0 +1,41 @@
+{"code":"200",
+"message":"OK",
+"data":{
+    "total":"12",
+    "result":[
+        {
+        "id":"1",
+        "loanApplicationId":"1",
+        "loanApplicationNo":"1000022277",
+        "type":"首次核查",
+        "abnormalInfo":"无异常",
+        "remark":"对客户进行贷前首次核查",
+        "isDialSelf":"是",
+        "isSelfAnswer":"是",
+        "createTime":"2017-01-23 11:02:34"
+        },
+                {
+        "id":"2",
+        "loanApplicationId":"1",
+        "loanApplicationNo":"1000022277",
+        "type":"贷后核查",
+        "abnormalInfo":"无异常",
+        "remark":"放款后对客户进行阶段性回访",
+        "isDialSelf":"是",
+        "isSelfAnswer":"是",
+        "createTime":"2017-02-23 11:02:34"
+        },
+                        {
+        "id":"3",
+        "loanApplicationId":"1",
+        "loanApplicationNo":"1000022277",
+        "type":"贷后核查",
+        "abnormalInfo":"有异常",
+        "remark":"本次回访，客户电话接听不是本人，需要注意",
+        "isDialSelf":"否",
+        "isSelfAnswer":"否",
+        "createTime":"2017-02-23 11:02:34"
+        }
+        ]
+    }
+}

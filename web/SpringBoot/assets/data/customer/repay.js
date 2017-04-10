@@ -1,0 +1,33 @@
+ {"code":"200",
+"message":"OK",
+"data":{
+    "total":"12",
+    "result":[{
+        "customer":{
+        "id":"1",
+        "name":"杨文军"
+        },
+        "id":"1",
+        "loanApplicationId":"1000022266",
+        "loanApplicationNo":"",
+        "customerId":"",
+        "customerName":"",
+        "overduePhase":"M1",
+        "repayTerm":"1",
+        "repayTime":"2017-02-28",
+        "bankCardNo":"",
+        "bankName":"",
+        "principal":"1200.00",
+        "principalInterest":"12000.00"
+        "interest":"",
+        "overduePenalty":"200.00",
+        "defaulPenalty":"103.00",
+        "totalAmount":"",
+        "isCurrentTerm":"",
+        "isOverdue":"",
+        "status":"0",
+        "createTime":"",
+        "updateTime":""
+        }]
+    }
+}

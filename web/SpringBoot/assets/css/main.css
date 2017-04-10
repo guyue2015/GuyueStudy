@@ -1,0 +1,581 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  height: 100%;
+}
+body {
+	min-width: 1280px;
+	font-family: "新宋体";
+  color: #333;
+  font-size: 14px;
+  height: 100%;
+    background: rgb(245,245,245);
+
+}
+body table,body table>thead>tr>th,body table>tr>td{
+	font-family: "宋体";
+  text-align: center;
+  font-weight: normal;
+}
+body #login .container {
+  width: 100%;
+  background: rgb(245,245,245);
+  padding: 0 auto;
+  min-height: 100%;
+}
+body .container {
+  padding: 20px;
+  background: #fff;
+}
+body .container.tabview {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {text-decoration: none;}
+.tabview {
+  /*margin: 0 auto;*/
+  /*width: 80%;*/
+  /*background: #fff;*/
+}
+.tabview .tabs {
+  width: 100%;
+  height: 50px;
+  background: rgb(245,245,245);
+}
+.tabview .items {
+  width: 96%;
+  margin: 20px auto;
+}
+.tabview .tab-item {
+  /*display: none;*/
+  width: 120px;
+  height: 50px;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  font-size: 14px;
+  float: left;
+  color: rgb(72,165,244);
+  cursor: pointer;
+}
+.tabview .tab-item.active {
+  color: rgb(51,51,51);
+  background: #fff;
+  border-top: 2px solid rgb(255,188,66);
+}
+.tabview .view-item {
+  display: none;
+}
+.tabview .view-item.active {
+  display: block;
+  clear: both;
+}
+.customer-info-personal {
+  width: 100%;
+  height: auto;
+  border: 1px solid rgb(238,238,238);
+  border-radius: 4px;
+  margin-top: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.customer-info-personal .infomation {
+  height: 50px;
+  width:98%;
+  margin: 0 1%;
+  line-height: 50px;
+  border-bottom: 1px solid rgb(238,238,238);
+  text-indent: 20px;
+}
+.customer-info-personal .personal-info {
+  color: rgb(72,165,244);
+  background: url(../img/info.png) left no-repeat,url(../img/xiala.png) right no-repeat;
+}
+.customer-info-personal .loan-customer-financial {
+  color: rgb(255,188,66);
+  background: url(../img/shenqing.png) left no-repeat,url(../img/xiala.png) right no-repeat;
+}
+.customer-info-personal .customer-net-worth-asset {
+  color: rgb(53,125,237);
+  background: url(../img/money.png) left no-repeat,url(../img/xiala.png) right no-repeat;
+}
+.customer-info-personal .customer-employment {
+  color: rgb(232,72,86);
+  background: url(../img/job.png) left no-repeat,url(../img/xiala.png) right no-repeat;
+}
+.customer-info-personal .customer-contact {
+  color: rgb(36,206,209);
+  background: url(../img/mation.png) left no-repeat,url(../img/xiala.png) right no-repeat;
+}
+.customer-info-personal .loan-info {
+  color: rgb(206,174,47);
+  background: url(../img/jie.png) left no-repeat,url(../img/xiala.png) right no-repeat;
+}
+.customer-info-personal .business-manager-comment {
+  color: rgb(128,160,245);
+  background: url(../img/messageer.png) left no-repeat,url(../img/xiala.png) right no-repeat;
+}
+.customer-info-personal .password-info {
+  color: rgb(128,160,245);
+  background: url(../img/edit.png) left no-repeat,url(../img/xiala.png) right no-repeat;
+}
+#personal .form-group{
+  height: 60px;
+  margin: 0;
+}
+.form-control{
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+/*按钮颜色样式 start*/
+.btn-yellow{
+  width: 90px;
+  height: 35px;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  background: #ffbc42!important;
+}
+.btn-blue{
+  width: 90px;
+  height: 35px;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  background: #48a5f4!important;
+}
+.btn-grey{
+  width: 90px;
+  height: 35px;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  background: #e5e5e5!important;
+}
+.a-yellow{
+  color: #ffbc42!important;
+  margin: 0 5px;
+}
+.a-blue{
+  color: #48a5f4!important;
+}
+/*按钮颜色样式 end*/
+#personal .customer-info-personal .col-sm-1,#personal .customer-info-personal .col-sm-2,#personal .customer-info-personal .col-sm-3,#personal .customer-info-personal .col-sm-4,#personal .customer-info-personal .col-sm-5,#personal .customer-info-personal .col-sm-6,#personal .customer-info-personal .col-sm-7,#personal .customer-info-personal .col-sm-8,#personal .customer-info-personal .col-sm-9,#personal .customer-info-personal .col-sm-10,#personal .customer-info-personal .col-sm-11,.public-box .col-sm-12 {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+#personal .form-group .col-sm-1,#personal .form-group .col-sm-2,#personal .form-group .col-sm-3,#personal .form-group .col-sm-4,#personal .form-group .col-sm-5,#personal .form-group .col-sm-6,#personal .form-group .col-sm-7,#personal .form-group .col-sm-8,#personal .form-group .col-sm-9,#personal .form-group .col-sm-10,#personal .form-group .col-sm-11,#personal .form-group .col-sm-12 {
+  padding-right: 4px;
+  padding-left: 4px;
+}
+.public-box {
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+}
+.form-group label {
+  text-align: right;
+  /*line-height: 34px;*/
+  font-weight: 100;
+}
+.must {
+  color: rgb(232,72,85);
+}
+span.tip{
+  background: url(../img/jingtan.png) 0 3px no-repeat;
+  color: #ed7700;
+  display: block;
+  text-indent: 20px;
+  margin: 6px 124px;
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  font-size: 16px;
+  color: rgb(51,51,51);
+}
+ul {
+  float: left;
+}
+ul li {
+  list-style: none;
+}
+textarea{
+  width:100%;
+  border-radius: 4px;
+  border:1px solid #ccc;
+}
+.time-pictuer {
+  background: url(../img/time.png) 96% no-repeat;
+}
+select.form-control {
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  background: #fff url(../img/xiala1.png) no-repeat scroll 97% center;
+  padding-right: 14px;
+}
+.unit {
+  position: absolute;
+  right: 12px;
+  top: 6px;
+}
+.unit-position {
+  position: relative;
+}
+.btns {
+  width:100%;
+  background: #fff;
+  margin: 20px auto;
+}
+.no-border {
+  border: none;
+  background: rgb(235,234,234);
+  border-radius: 4px;
+  min-height: 140px;
+}
+textarea{
+  margin-bottom: 20px;
+}
+.loan-type input[type="checkbox"] {
+  position: absolute;
+  top: 0px;
+  left: 2px;
+  -webkit-appearance: none;
+  background: none;
+  visibility: visible;
+}
+.loan-type label {
+  background: url(../img/check.png) no-repeat left;
+  padding-left: 20px;
+}
+.loan-type input:checked +label{
+  background: url(../img/check2.png) no-repeat left;
+}
+.is-known-by-family label {
+  background: url(../img/onlys.png) no-repeat left;
+  padding-left: 20px;
+  height:30px;
+  line-height: 30px;
+  width: 74px;
+  text-align: left;
+}
+.is-known-by-family input[type="radio"] {
+  position: absolute;
+  top: 35px;
+  -webkit-appearance: none;
+  background: none;
+}
+.is-known-by-family input:checked +label{
+  background: url(../img/only.png) no-repeat left;
+}
+.is-known-by-family label {
+  margin-bottom: 0;
+}
+.worth {
+  position: relative;
+}
+.add-property {
+  width: 30px;
+  height: 30px;
+  background: url(../img/adds.png)  0 6px no-repeat;
+  position: absolute;
+  top: 388px;
+  left: 20px;
+  cursor: pointer;
+}
+.house {
+  position: relative;
+}
+.delete-property {
+  width: 30px;
+  height: 30px;
+  background: url(../img/unadds.png)  0 6px no-repeat;
+  cursor: pointer;
+  position: absolute;
+  left: 4px;
+  top: 0;
+}
+.infomation .expand {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  outline:none;
+}
+.infomation button.active{
+  border: none;
+}
+
+.dropdown-submenu{position:relative;}
+.dropdown-submenu>.dropdown-menu{top:0;left: 100%;max-width:180px;margin-top:-6px;margin-right:-1px;-webkit-border-radius:6px 6px 6px 6px;-moz-border-radius:6px 6px 6px 6px;border-radius:6px 6px 6px 6px;}
+.dropdown-submenu:hover>.dropdown-menu{display:block;}
+/*.dropdown-submenu>a:after{display:block;content:" ";float:left;width:0;height:0;border-color:transparent;border-style:solid;border-width:5px 5px 5px 0;border-right-color:#999;margin-top:5px;margin-right:10px;}*/
+.dropdown-submenu:hover>a:after{border-left-color:#ffffff;}
+.dropdown-submenu.pull-left{float:none;}.dropdown-submenu.pull-left>.dropdown-menu{left:-100%;margin-left:10px;-webkit-border-radius:6px 6px 6px 6px;-moz-border-radius:6px 6px 6px 6px;border-radius:6px 6px 6px 6px;}
+.dropdown-menu-right {margin-left:0;}
+
+div.over {
+  width:100%;
+  height:20px;
+}
+.form-control[disabled]{
+  /*background: #fff;*/
+}
+.whiteColor {
+  background: #fff;
+}
+.control-label span{
+  color: red;
+  margin: 0 3px;
+}
+.home .customer-info-personal {
+  border: none;
+}
+#hd h1{
+  float: left;
+  width: 172px;
+  height: 61px;
+  text-indent: -999em;
+  background: url(../img/logo.png) no-repeat;
+  background-size: 172px 61px;
+  margin-left: 10%;
+}
+
+#hd>div{
+  position: relative;
+}
+#hd .head-right{
+  float: right;
+  margin-right: -6%;
+  margin-top: 30px;
+  color: #333;
+}
+#hd img{
+  float: right;
+  margin-right: 15%;
+  margin-top: 20px;
+}
+#hd ul.headSelect{
+  float: right;
+  width: 140px;
+  height: 110px;
+  border-radius: 5px;
+  position: absolute;
+  top: 70px;
+  right: 12%;
+  z-index: 5;
+  background: url(../img/nameedit.png) no-repeat;
+  background-size: 140px 110px;
+  display: none;
+  padding-top: 5px;
+}
+#hd ul.headSelect li a{
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  width: 120px;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+}
+#hd ul.headSelect li.repassword{
+  background: url(../img/mima.png) no-repeat 10px center;
+}
+#hd ul.headSelect li.signout{
+  background: url(../img/guanbi.png) no-repeat 10px center;
+}
+#hd .navbar-default {
+  background: #48a5f4;
+  border: none;
+}
+#hd .navbar-collapse{
+  width: 80%;
+  margin: 0 auto;
+}
+#hd .navbar-default .navbar-nav > li > a{
+  color: #fff;
+}
+#hd .navbar-default .navbar-nav > li > a:hover{
+  background: #ffbc42;
+}
+#hd .dropdown-menu > li > a{
+  background: #ffbc42;
+  color: #fff;
+}
+#hd .dropdown-menu > li > a:hover{
+  background: #d7a242;
+}
+#hd .dropdown-menu{
+  padding:0;
+}
+#hd .dropdown-submenu>.dropdown-menu{
+  margin-top: 0px
+}
+#hd .dropdown-menu li a{
+  height: 40px;
+  line-height: 40px;
+}
+#hd .dropdown-menu{
+  box-shadow: 0 4px 12px rgba(255, 204, 153, .65);
+  border: none;
+}
+#hd .navbar{
+  margin-bottom: 0;
+}
+#hd {
+  position: relative;
+  z-index: 1000;
+}
+#password p{
+    height: 16px;
+    line-height: 16px;
+    color: #48a5f4;
+    text-indent: 20px;
+    font-size: 14px;
+    background: url(../img/edit.png) no-repeat left center;
+    margin-left: 15px;
+}
+#password{
+    height: 500px;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+#password form{
+  width: 50%;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.pageview {
+  margin-bottom: 50px;
+  font-size: 14px;
+}
+
+.table {
+  font-size: 12px;
+}
+.search-form {
+  margin-bottom: 30px;
+}
+.search-form label {
+  margin: 0;
+  padding: 0;
+  line-height: 34px;
+  margin-left: 20px;
+  margin-right: 9px;
+}
+.search-form .form-control {
+  display: inline-block;
+  width: 180px;
+  height: 32px;
+  border: 1px solid #e5e5e5;
+}
+.search-form input[type="submit"],
+.search-form input[type="button"] {
+  font-size: 16px;
+  width: auto;
+  margin-left: 7px;
+  padding: 0 27px;
+  outline: none;
+}
+.search-form .btn:hover {
+  border: none;
+}
+.search-form input.btn-first {
+  margin-left: 11px;
+}
+
+.search-form .form-control-date {
+  width: 128px;
+}
+
+.breadcrumb > li + li:before {
+  content: ">\00a0";
+}
+
+.breadcrumb-wrapper {
+  height: 60px;
+  line-height: 60px;
+  padding: 0;
+  background: #fff;
+  margin-bottom: 20px;
+}
+body .breadcrumb-wrapper .container {
+  padding: 0;
+      margin-bottom: 0;
+}
+
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+  line-height: 26px;
+}
+.table-bordered > thead > tr > th, .table-bordered > thead > tr > td {
+  border-bottom-width: 1px;
+}
+
+/* pager pagination 都已经定义了 */
+.page select {
+  width: 70px;
+  margin: 0 3px;
+}
+
+#comment-page .form-group{
+  height: auto;
+  min-height: 60px;
+}
+input[type="checkbox"]+label,input[type="radio"]+label {
+  cursor: pointer;
+}
+#password .prompt{
+    width: 100%;
+    display: block;
+    text-align: left;
+    color: red;
+}
+.modal-footer input.hui,button.hui{
+  background: #ccc!important;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 28px;
+}
+/* Form表单验证的错误提示 */
+.err-msg {
+  position: absolute;
+  height: 28px;
+  line-height: 28px;
+  overflow: hidden;
+  bottom: -28px;
+  font-size: 12px;
+  color: #ff3333;
+}
+
+.err-msg ul {
+  margin: 0;
+}
+
+.select2-container .select2-selection--single {
+  height: 34px;
+}
+
+.form-control.select-name {
+  width: 100%;
+}
+
+label.required {
+  position: relative;
+}
+
+label.required::before {
+  content: '*';
+  color: red;
+}
+

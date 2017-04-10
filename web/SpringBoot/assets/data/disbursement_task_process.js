@@ -1,0 +1,17 @@
+{
+"code":200,
+"message":"OK",
+"data":[{
+   "repayTerm":"3",
+   "repayTime":"2017-4-1",
+   "principal":"2000",
+   "interest":"1%",
+   "principalInterest":"2010"
+ },{
+   "repayTerm":"3",
+   "repayTime":"2017-4-1",
+   "principal":"2000",
+   "interest":"1%",
+   "principalInterest":"2010"
+ }]
+}

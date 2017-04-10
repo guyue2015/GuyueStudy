@@ -1,0 +1,53 @@
+ {"code":"200",
+"message":"OK",
+"data":{
+"customer":{
+    "name":"",
+    "idcard":""
+    },
+"product":{
+    "name":"房贷"
+    },
+"loan_application":{
+    "applicationNo":"1000022266",
+    "customerId":"",
+    "productId":"1",
+    "businessManagerId":"",
+    "rateCalcMethod":"1",
+    "rate":"0.1",
+    "applyAmount":"120000.00",
+    "applyTerms":"12",
+    "bankCardNo":"",
+    "bankName":"",
+    "bankBranch":"",
+    "isUrgent":"",
+    "loanPurpose":"",
+    "otherLoanPurpose":"",
+    "customerSource":"",
+    "otherCustomerSource":"",
+    "loanType":"",
+    "collateralId":"",
+    "isKnownByFamily":"",
+    "businessManagerRemark":"",
+    "businessDirectorRemark":"",
+    "creditLevel":"",
+    "creditScore":"",
+    "approvalAmount":"",
+    "disbursementAmount":"120000.00",
+    "latestPostLendingCheckupTime":"",
+    "status":"",
+    "createTime":"",
+    "registerTime":"",
+    "applyTime":"2016-03-30 17:12:04",
+    "reviewTime":"",
+    "firstApprovalTime":"",
+    "finalApprovalTime":"",
+    "disbursementTime":"",
+    "riskManagerId":"",
+    "firstRepayTime":"",
+    "customerName":"",
+    "customerIdcard":"",
+    "customerMobile":""
+}
+}
+}
