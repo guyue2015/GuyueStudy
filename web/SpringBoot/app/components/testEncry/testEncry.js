@@ -48,10 +48,6 @@ function TestEncryController($rootScope, $scope, $state, $stateParams, $api, $co
         return;
       }
        $scope.data = resp.data.data;
-      //将来源字典值转义显示
-      angular.forEach($scope.data, function(obj){
-       
-      });
        var mainJquery = $('#main');
         var myChart = echarts.init(mainJquery[0]);
 
@@ -65,13 +61,13 @@ function TestEncryController($rootScope, $scope, $state, $stateParams, $api, $co
                 data:['数据']
             },
             xAxis: {
-                data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
+                data: $scope.data.keys
             },
             yAxis: {},
             series: [{
                 name: '数据',
                 type: 'bar',
-                data: [5, 20, 36, 10, 10, 20]
+                data: $scope.data.values
             }]
         };
 

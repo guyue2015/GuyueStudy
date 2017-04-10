@@ -5,7 +5,8 @@ angular
 		return env;
   }])
 	.factory('$apiHost', ['$env', function($env) {
-		 return 'http://192.168.15.75:8881/'; // 胡贺东
+		 return 'http://127.0.0.1:8080/'; // 胡贺东
+//		 return 'http://192.168.15.75:8881/'; // 胡贺东
     if ($env.indexOf('test') === 0) {
       return 'http://test.mapi.ssls.credit-pomelo.com';
     }
