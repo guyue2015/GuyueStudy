@@ -19,12 +19,12 @@ public class TestCreateTabaoData {
 	/**
 	 * 淘宝助理文件目录
 	 */
-	public static String taobaoHelpFile="D:/迅雷下载/倪雪淘宝/小奈、4.5/淘宝助理5201704042156.csv";
+	public static String taobaoHelpFile="D:/迅雷下载/倪雪淘宝/小奈、4.5/淘宝助理5201704042156.xlsx";
 	
 	/**
 	 * 生成文件目录
 	 */
-	public static String resultFilePath ="D:/迅雷下载/倪雪淘宝/小奈、4.5/";
+	public static String resultFilePath ="D:/迅雷下载/倪雪淘宝/小奈、4.5/test.xlsx";
 	
 	public static void main(String[] args) {
 		if(args!=null&&args.length==4){
@@ -35,9 +35,6 @@ public class TestCreateTabaoData {
 		}
 		if(!titleFileDirectory.endsWith("/")){
 			titleFileDirectory=titleFileDirectory+"/";
-		}
-		if(!resultFilePath.endsWith("/")){
-			resultFilePath=resultFilePath+"/";
 		}
 		if(!FileUtil.exists(titleFileDirectory)){
 			System.out.println("文件目录不存在:"+titleFileDirectory);
@@ -51,12 +48,7 @@ public class TestCreateTabaoData {
 			System.out.println("文件目录不存在:"+taobaoHelpFile);
 			return;
 		}
-		if(!FileUtil.exists(resultFilePath)){
-			System.out.println("文件目录不存在:"+resultFilePath);
-			return;
-		}
 		
 		String resultFile = TaobaoUtil.createTaobaoFile(FileUtil.getPath(titleFileDirectory),FileUtil.getPath(titleFile),FileUtil.getPath(taobaoHelpFile),FileUtil.getPath(resultFilePath));
-		System.out.println("文件已生成，生成文件位于:"+resultFile);
 	}
 }
