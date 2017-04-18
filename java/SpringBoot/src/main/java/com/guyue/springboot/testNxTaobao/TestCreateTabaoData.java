@@ -1,7 +1,5 @@
 package com.guyue.springboot.testNxTaobao;
 
-import org.apache.commons.io.FileUtils;
-
 import com.guyue.common.util.FileUtil;
 
 /**
@@ -11,7 +9,7 @@ import com.guyue.common.util.FileUtil;
  */
 public class TestCreateTabaoData {
 	/**
-	 * 标题栏目录
+	 * 标题栏目录O
 	 */
 	public static String titleFileDirectory="D:/迅雷下载/倪雪淘宝/小奈、4.5/标题栏/";
 	/**
@@ -58,7 +56,7 @@ public class TestCreateTabaoData {
 			return;
 		}
 		
-		String resultFile = TaobaoUtil.createTaobaoFile(titleFileDirectory,titleFile,taobaoHelpFile,resultFilePath);
+		String resultFile = TaobaoUtil.createTaobaoFile(FileUtil.getPath(titleFileDirectory),FileUtil.getPath(titleFile),FileUtil.getPath(taobaoHelpFile),FileUtil.getPath(resultFilePath));
 		System.out.println("文件已生成，生成文件位于:"+resultFile);
 	}
 }
