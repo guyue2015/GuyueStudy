@@ -24,7 +24,7 @@ public class TestCreateTabaoData {
 	/**
 	 * 生成文件目录
 	 */
-	public static String resultFilePath ="D:/迅雷下载/倪雪淘宝/小奈、4.5/test.xlsx";
+	public static String resultFilePath ="D:/迅雷下载/倪雪淘宝/小奈、4.5/分裂结果5201704042156.csv";
 	
 	public static void main(String[] args) {
 		if(args!=null&&args.length==4){

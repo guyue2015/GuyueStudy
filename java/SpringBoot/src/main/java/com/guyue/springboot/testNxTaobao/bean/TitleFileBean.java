@@ -3,11 +3,12 @@ package com.guyue.springboot.testNxTaobao.bean;
 import java.util.List;
 import java.util.Map;
 
-public class TitleFileBean {
+public class TitleFileBean implements Comparable<TitleFileBean>{
 	String name;
 	String code;
 	Map<Integer,String> excelContextTemple;
 	List<String> titles;
+	Integer order;
 	public String getName() {
 		return name;
 	}
@@ -32,4 +33,15 @@ public class TitleFileBean {
 	public void setTitles(List<String> titles) {
 		this.titles = titles;
 	}
+	public Integer getOrder() {
+		return order;
+	}
+	public void setOrder(Integer order) {
+		this.order = order;
+	}
+	@Override
+	public int compareTo(TitleFileBean o) {
+		return this.getOrder().compareTo(o.getOrder());
+	}
+	
 }
