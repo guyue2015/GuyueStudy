@@ -181,6 +181,7 @@
   	</profile>
   </profiles>
   <build>
+  	<defaultGoal>compile</defaultGoal>
   	<filters>
 			<filter>${project.basedir}/profiles/base.properties</filter>
 			<filter>${project.basedir}/profiles/${build.profile.product}/base.properties</filter>
