@@ -1,1 +1,1 @@
-start E:\guyue\project\XshellXftpPortable\XshellPortable.exe
+start J:\tools\XshellXftpPortable\XshellPortable.exe
