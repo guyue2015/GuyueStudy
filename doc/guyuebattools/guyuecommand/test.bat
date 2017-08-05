@@ -1,1 +1,1 @@
-start  /MIN E:\guyue\project\redis\redis-cli.exe
+start J:\tools\nginx\nginx.exe
