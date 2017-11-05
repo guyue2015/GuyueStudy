@@ -1,2 +1,2 @@
 cd /d J:\tools\nginx\
-nginx.exe
+nginx.exe -s reload
