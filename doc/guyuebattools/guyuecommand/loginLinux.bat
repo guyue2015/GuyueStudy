@@ -1,1 +1,1 @@
-start J:\tools\XshellXftpPortable\XshellPortable.exe
+start Y:\tools\XshellXftpPortable\XshellPortable.exe

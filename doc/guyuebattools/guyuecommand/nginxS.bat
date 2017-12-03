@@ -1,2 +1,2 @@
-cd /d J:\tools\nginx\
+cd /d Y:\tools\nginx\
 nginx.exe

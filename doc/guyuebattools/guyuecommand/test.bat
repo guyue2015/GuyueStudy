@@ -1,1 +1,1 @@
-start J:\tools\nginx\nginx.exe
+start Y:\tools\nginx\nginx.exe

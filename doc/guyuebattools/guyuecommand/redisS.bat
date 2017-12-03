@@ -1,1 +1,1 @@
-start /MIN J:\server\redis\redisbin_x64\redis-server.exe
+start /MIN Y:\server\redis\redisbin_x64\redis-server.exe
